@@ -1,0 +1,106 @@
+/* Background setup */
+body {
+    min-height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Form card with glass effect */
+  .container {
+    max-width: 500px;
+    background: rgba(183, 169, 169, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 30px 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #f2e9e9;
+  }
+
+  
+  /* Form label styling */
+  label {
+    font-weight: 500;
+    color: #f0f0f0;
+  }
+  
+  /* Inputs */
+  input.form-control {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+  
+  input.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  input.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: #ffffff;
+    box-shadow: 0 0 0 0.1rem rgba(255, 255, 255, 0.4);
+  }
+  #year{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: #ffffff;
+    box-shadow: 0 0 0 0.1rem rgba(255, 255, 255, 0.4);
+  
+  }
+  #eligiblity{
+    font-size: x-large;
+    font-weight: bolder;
+  }
+  
+  /* Alerts */
+  .form-text.text-danger {
+    color: #fc1313 !important;
+    font-size: 14px;
+  }
+  
+  /* Button */
+  #submit{
+    background-color: #0a0a0a;
+    color: #f9f5f5;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  #reset{
+    background-color: #0a0a0a;
+    color: #f9f5f5;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s ease;
+  }
+ #reset:hover {
+    background-color: #ddd;
+    color: #000;
+  }
+  
+  #submit:hover {
+    background-color: #f5eeee;
+    color: #000;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 576px) {
+    .container {
+      padding: 20px;
+    }
+  
+    button[type="submit"] {
+      font-size: 15px;
+    }
+  }
+  
